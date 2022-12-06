@@ -93,5 +93,14 @@ export const ScatterChart = () => {
 
 
 
-    return <Scatter options={options} data={data} />;
+    return (
+      <div className="card" >
+        
+        <div className="card-header text-center">
+          Nivel de humedad
+        </div>
+
+        {/* <Scatter options={options} data={data} /> */}
+      </div>
+    )
 }

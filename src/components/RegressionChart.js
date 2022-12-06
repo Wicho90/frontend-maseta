@@ -51,7 +51,7 @@ export const data = {
     ],
   };
 
-export const HumedadRegresion = () => {
+export const RegressionChart = () => {
 
     const { socket } = useContext( SocketContext );
 
@@ -91,7 +91,17 @@ export const HumedadRegresion = () => {
 
 
 
-    return <Chart type='scatter' data={userData}  />;
+    return (
+      <div className="card" >
+        
+        <div className="card-header text-center">
+          Regresion
+        </div>
+
+        <Chart type='scatter' data={userData} className="card-img-top" />
+
+      </div>
+    );
 }
 
 

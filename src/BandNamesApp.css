@@ -1,4 +1,26 @@
+nav {
+    background-color: #070809;
+
+}
+
+
 body {
     background-color: black;
     color: aliceblue;
+}
+
+.card {
+    /* background-color: #070809; */
+    background-color: black;
+
+
+    border-color: #c2b7b721;
+    border-width: thin;
+
+}
+
+.card-header {
+    background-color: #070809;
+    border-color: #c2b7b721;
+
 }

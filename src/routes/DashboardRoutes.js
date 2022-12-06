@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import { Navbar } from '../components/ui/Navbar';
 
 import HomePage from '../pages/HomePage';
@@ -10,21 +11,27 @@ import { RegresionPage } from '../pages/RegresionPage';
 
 
 export const DashboardRoutes = () => {
+    
 
     return (
         <>
+            <ToastContainer />
+
             <Navbar />
 
-            <div>
-                <Routes>
-                    <Route path='/' element={ HomePage() } /> 
-                    <Route path='/luz' element={ LuzPage() } /> 
-                    <Route path='/humedad' element={ HumedadPage() } /> 
-                    <Route path='/regresion' element={ RegresionPage() } />
+            <div className="container mt-2">
 
+                <Routes>
+                    <Route path='/' element={ <HomePage /> } /> 
+                    <Route path='/luz' element={ <LuzPage /> } /> 
+                    <Route path='/humedad' element={ <HumedadPage /> } /> 
+                    <Route path='/regresion' element={ <RegresionPage /> } />
                 </Routes>
+
             </div>
-        
+
+
+
         </>
     )
 }
